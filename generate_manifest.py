@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "metadata": {
+    "appmode": "python-shiny",
+    "entrypoint": "app.py"
+  },
+  "python": {
+    "version": "3.9.0",
+    "package_manager": {
+      "name": "pip",
+      "package_file": "requirements.txt"
+    }
+  },
+  "files": {
+    "app.py": {
+      "checksum": ""
+    },
+    "load_data.py": {
+      "checksum": ""
+    },
+    "requirements.txt": {
+      "checksum": ""
+    },
+    "Population-2023-filtered.csv": {
+      "checksum": ""
+    }
+  }
+}
