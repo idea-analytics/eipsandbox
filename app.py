@@ -14,11 +14,13 @@ from plotly.subplots import make_subplots
 
 def load_and_prepare_data():
     """Load census data and tract shapefiles"""
+    from load_data import load_texas_tracts
+    
     # Load population data
     pop_df = pd.read_csv('Population-2023-filtered.csv')
     
-    # Load census tract shapefile
-    tracts_gdf = gpd.read_file('tl_2023_48_tract/tl_2023_48_tract.shp')
+    # Load census tract shapefile (downloads if not present)
+    tracts_gdf = load_texas_tracts()
     
     # Merge population data with geometries
     # Assuming Geography column matches GEOID in shapefile
